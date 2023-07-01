@@ -3,7 +3,7 @@ Get a four Digit number form the user and print the reverse of it?
 #include<stdio.h>
 int main()
 {
-int givennumber,reversed_number;
+int givennumber,reversed_number=0;
 printf("Give a number:");
 scanf("%d",&givennumber);
 while(givennumber!=0)
