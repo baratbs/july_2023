@@ -1,0 +1,18 @@
+Get a four Digit number form the user and print the reverse of it?
+
+#include<stdio.h>
+int main()
+{
+int givennumber,reversed_number;
+printf("Give a number:");
+scanf("%d",&givennumber);
+while(givennumber!=0)
+{
+reversed_number=(reversed_number*10)+(givennumber%10);
+givennumber=givennumber/10;
+}
+printf("The Reversed_number is:%d",reversed_number);
+}
+
+/* Give a number:12345678
+The Reversed_number is:87654321 */
