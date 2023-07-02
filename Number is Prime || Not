@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int given_number,diviser;
+    printf("Give me a number:");
+    scanf("%d",&given_number);
+    diviser=2;
+    while(diviser<given_number)
+    {
+        if(given_number%diviser==0)
+        {
+            printf("Not a PRIME NUMBER\n");
+            break;
+        }
+        diviser++;
+    }
+    if(given_number==diviser)
+    {
+        printf("PRIME NUMBER\n");
+    }
+    return 0;
+}
+
+
+/*OUTPUT
+Give me a number:999999
+Not a PRIME NUMBER
+
+Give me a number:22222
+Not a PRIME NUMBER*/
