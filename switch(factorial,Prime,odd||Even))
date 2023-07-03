@@ -1,0 +1,64 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int choice,givennumber,diviser,answer_factorial;
+    while(1)
+    {
+        printf("\n 1.Factorial\n");
+        printf("2.Prime\n");
+        printf("3.odd/Even\n");
+        printf("4.Exit\n");
+        printf("your choice?");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+            printf("\n Enter the number:");
+            scanf("%d",&givennumber);
+            answer_factorial=1;
+            while(givennumber>1)
+            {
+                answer_factorial=answer_factorial*givennumber;
+                givennumber--;
+            }
+            printf("Factorial value=%d\n",answer_factorial);
+            break;
+            
+            case 2:
+            printf("\n Enter the number:");
+            scanf("%d",&givennumber);
+            diviser=2;
+            while(diviser<givennumber)
+            {
+                if(givennumber%diviser==0)
+                {
+                    printf("\n The number is not prime");
+                    break;
+                }
+                diviser++;
+            }
+            if(diviser==givennumber)
+            {
+                printf("\nThe number is prime\n");
+            }
+            break;
+            case 3:
+            printf("\n Enter the number:");
+            scanf("%d",&givennumber);
+            if(givennumber%2==0)
+            {
+                printf("\nThe number is even number\n");
+            }
+            else
+            {
+                printf("The number is odd numeber");
+            }
+            break;
+            case 4:exit(0);
+            default:
+            printf("Wrong Choice!\a\n");
+}
+    }
+    return 0;
+}
