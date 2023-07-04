@@ -1,0 +1,84 @@
+// Level 1
+
+#include<stdio.h>
+void simple_function(); /*Function Prototype Declaration*/
+/* void Is the Retuen Type of the Function*/
+/* simple_function is the Name of the Function*/
+/* ()- Here I am not passing Anything so I left the paranthesis Blank.*/
+/* If I suppose to pass something I need to define the constant like(int,float,char)inside it with ,*/
+int main()
+{
+    int given_number;
+    printf("Give me a number: ");
+    scanf("%d",&given_number);
+    simple_function();
+    printf("%d\n",given_number);
+    return 0;
+}
+void simple_function()
+{
+    printf("My first Function\n");
+}
+
+/*output
+Give me a number: 264
+My first Function
+264*/
+
+
+//Level 2
+
+#include<stdio.h>
+int sum(int,int,int,int);
+int main()
+{
+    int a,b,c,d,answer;
+    printf("Give me the numbers:\n ");
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    answer=sum(a,b,c,d);
+    printf("The answer is:%d",answer);
+    return 0;
+}
+int sum(int a,int b,int c,int d)
+{
+    int answer;
+    answer=a+b+c+d;
+    return(answer); 
+    /* This function returns integer constant*/
+}
+
+//Level 3 - Float Retern Type (Default Return Type of a Function is int)
+#include<stdio.h>
+float square_value(float);
+int main()
+{
+    float given_number,answer;
+    printf("Give me the number: ");
+    scanf("%f",&given_number);
+    answer=square_value(given_number);
+    printf("The answer is:%f\n",answer);
+    return 0;
+}
+float square_value(float given_number)
+{
+    float answer;
+    answer=given_number*given_number;
+    return(answer);
+}
+
+*/ OUTPUT
+Give me the number: 33.44
+The answer is:1118.233521
+
+Give me the number: 2
+The answer is:4.000000
+
+*/
+
+
+
+
+
+
+
+
