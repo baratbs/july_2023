@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int a=10,b=20,c=30;
+int *p,*q,*r;
+p=&a;
+q=&b;
+r=&c;
+q=p;
+r=p;
+*r=10000;
+printf("%d  %d  %d\n",a,b,c);
+printf("%d	%d	%d\n",*p,*q,*r);
+}
