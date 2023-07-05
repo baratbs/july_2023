@@ -28,3 +28,46 @@ Not a PRIME NUMBER
 
 Give me a number:22222
 Not a PRIME NUMBER*/
+
+
+
+/* Prime Number with Functions */
+
+#include<stdio.h>
+char isprime(int);
+int main()
+{
+int givennumber,diviser,result;
+printf("Give me a number: ");
+scanf("%d",&givennumber);
+result=isprime(givennumber);
+if(result=='Y')
+printf("The Given number is prime\n");
+else
+printf("The Given number is not_prime\n");
+return 0;
+}
+
+char isprime(int givennumber)
+{
+int diviser=2,prime=1;
+while(diviser<givennumber)
+{
+if(givennumber%diviser==0)
+{
+prime=0;
+break;
+}
+diviser++;
+}
+if(givennumber==diviser)
+{
+prime=1;
+}
+
+if(prime==1)
+return('Y');
+else
+return('N');
+
+}
