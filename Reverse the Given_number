@@ -16,3 +16,28 @@ printf("The Reversed_number is:%d",reversed_number);
 
 /* Give a number:12345678
 The Reversed_number is:87654321 */
+
+
+Reverse the Number using Functions and Pointers
+#include<stdio.h>
+int main()
+{
+int givennumber;
+printf("Give me a number:");
+scanf("%d",&givennumber);
+givennumber=reverse_the_number(&givennumber);
+printf("The number is %d\n",givennumber);
+}
+void reverse_the_number(int *function_givennumber)
+{
+int temp=0;
+while(*function_givennumber>0)
+{
+temp=(temp*10)+(*function_givennumber%10);
+*function_givennumber=*function_givennumber/10;
+}
+function_givennumber=temp;
+}
+
+/*Give me a number:12345
+The number is 54321*/
