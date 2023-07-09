@@ -1,0 +1,19 @@
+Average marks of 30 students using Arrays
+
+#include<stdio.h>
+int main()
+{
+int avg,sum=0;
+int i;
+int marks[5];
+for(i=0;i<30;i++)
+{
+printf("ENTER MARKS\n");
+scanf("%d",&marks[i]);
+}
+for(i=0;i<30;i++)
+sum=sum+marks[i];
+avg=sum/30;
+printf("AVERAGE MARKS=%d\n",avg);
+return 0;
+}
