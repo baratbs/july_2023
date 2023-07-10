@@ -1,0 +1,40 @@
+//Get a string and check the Given number is valid or Not valid
+
+#include<stdio.h>
+int valid_or_notvalid(char *);
+int main()
+{
+char string[50], *pointer,valid;
+scanf("%s",&string);
+valid=valid_or_notvalid(&string);
+if(valid==1)
+{
+printf("The number is valid number");
+}
+else
+printf("The number is not valid");
+}
+int valid_or_notvalid(char *function_pointer)
+{
+int valid_or_notvalid;
+char valid=1;
+while(*function_pointer!='\0')
+{
+valid_or_notvalid=*function_pointer-48;
+if(valid_or_notvalid<9)
+{
+ function_pointer++;
+ continue;
+}
+else
+valid=0;
+break;
+}
+return(valid);
+}
+
+//OUTPUT
+1234567891
+The number is valid number
+1ASDF1234
+The number is not valid
