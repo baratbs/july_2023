@@ -12,3 +12,22 @@ i++;
 j--;
 }
 }
+
+//copy one string to Another
+#include<stdio.h>
+int main()
+{
+char inital_string[10], * pointer, final_string[10];
+int i=0,j=0;
+printf("Give me a number: ");
+scnaf("%d",inital_string);
+pointer=&initial_string;
+while(inital_string[i]!='\0')
+{
+final_string[j]=*pointer;
+pointer++;
+i++;
+j++
+}
+printf("%s",fina;_string);
+}
