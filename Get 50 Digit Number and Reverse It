@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+char given_string[10],final_string[10];
+char i=0;j=9;
+printf("GIve me a number: ");
+scnaf("%s",string);
+while(given_string!='\0')
+{
+given_string[i]=final_string[j];
+i++;
+j--;
+}
+}
