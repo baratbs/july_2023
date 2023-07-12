@@ -1,16 +1,21 @@
+//Reverse the Given string upto 50 Digits
 #include<stdio.h>
 int main()
 {
-char given_string[10],final_string[10];
-char i=0;j=9;
-printf("GIve me a number: ");
-scnaf("%s",string);
-while(given_string!='\0')
+char initial_string[51],final_string[51],*pointer;
+int i=0,j=9;
+printf("Give me a number:\n");
+scanf("%s",initial_string);
+//reverse_the_string(initial_string);
+pointer=&initial_string;
+while(*pointer!=0)
 {
-given_string[i]=final_string[j];
+final_string[j]=initial_string[i];
 i++;
 j--;
+pointer++;
 }
+printf("%s",final_string);
 }
 
 //copy one string to Another
