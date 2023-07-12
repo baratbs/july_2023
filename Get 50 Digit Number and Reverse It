@@ -18,6 +18,12 @@ pointer++;
 printf("%s",final_string);
 }
 
+/*
+Give me a number:
+12345678901234567890123456789012345678901234567890
+09876543210987654321098765432109876543210987654321
+*/
+
 //copy one string to Another
 #include<stdio.h>
 int main()
