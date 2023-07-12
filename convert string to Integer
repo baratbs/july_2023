@@ -1,0 +1,22 @@
+// Get a number string upto 50 Digits and convert it to integer array.
+#include<stdio.h>
+int main()
+{
+char string1[51];
+int integer_array[51],i=0,j=0;
+printf("Give me a number:\n");
+scanf("%s",string1);
+while(string1[i]!='\0')
+// If we put 0 - It is right here. Because, It is string value so zero is stored as 48.
+//If we put !=48 The moment I encounter zero the program will stop.
+{
+integer_array[j]=string1[i]-48;
+printf("%d",integer_array[i]);
+i++;
+j++;
+}
+}
+
+/*Give me a number:
+09876543210987654321098765432109876543210987654321
+09876543210987654321098765432109876543210987654321*/
