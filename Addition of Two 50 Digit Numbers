@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+int addition_iteration=0,k=50,i=49,j=49;
+int array1[50]={9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9};
+    int array2[50]={9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9};
+int remainder_array[1]={0},final_array[51];
+//scanf("%d",array1);
+//scanf("%d",array2);
+while(addition_iteration<=49)
+{
+remainder_array[0]=array1[i]+array2[i]+remainder_array[0];
+final_array[k]=remainder_array[0]%10;
+remainder_array[0]=remainder_array[0]/10;
+i--;
+j--;
+k--;
+addition_iteration++;
+}
+final_array[0]=remainder_array[0];
+for(i=0;i<51;i++)
+{
+printf("%d",final_array[i]);
+}
+}
+
+*/
+199999999999999999999999999999999999999999999999998 */
