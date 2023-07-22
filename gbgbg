@@ -1,0 +1,30 @@
+#include<stdio.h>
+void addition_of_arrays(int*,int*,int*);
+int main()
+
+{
+int array1[3]={9,9,9};
+int array2[3]={9,9,9};
+int answer_array[4];
+addition_of_arrays(&array1[2],&array2[2],&answer_array[3]);
+for(int i=0;i<4;i++)
+{
+printf("%d",answer_array[0]);
+}
+}
+
+void addition_of_arrays(int*pointer1, int* pointer2, int* answer_array)
+{
+int remainder_array[1];
+for(int i=0;i<2;i++)
+{
+remainder_array[0]=0;
+remainder_array[0]=*pointer1+*pointer2+remainder_array[0];
+*answer_array=remainder_array[0]%10;
+remainder_array[0]=remainder_array[0]/10;
+pointer1--;
+pointer2--;
+answer_array--;
+}
+*answer_array=*answer_array+remainder_array[0];
+}
