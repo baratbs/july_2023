@@ -1,0 +1,17 @@
+#include<stdio.h>
+void swap(int*,int*);
+int main()
+{
+int a=10,b=20;
+printf("%d	%d",a,b);
+swap(&a,&b);
+printf("\n%d	%d",a,b);
+}
+
+void swap(int*a,int*b)
+{
+int var_temp;
+var_temp=*a;
+*a=*b;
+*b=var_temp;
+}
